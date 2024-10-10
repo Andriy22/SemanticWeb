@@ -1,0 +1,35 @@
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Keyd a foaf:Person ;
+    ex:address "1516 Henry Street, Берклі, Каліфорнія 94709, США" ;
+    ex:degree "бакалавр біології" ;
+    ex:graduationYear "2011"^^xsd:gYear ;
+    ex:interests "птахи, екологія, довкілля, фотографія, подорожі" ;
+    ex:knows ex:Emma ;
+    ex:metIn ex:Париж_2014 ;
+    ex:university ex:КаліфорнійськийУніверситет ;
+    ex:visited ex:Канада,
+        ex:Німеччина,
+        ex:Франція ;
+    foaf:name "Кейд" .
+
+ex:Emma a foaf:Person ;
+    ex:address "Carrer de la Guardia Civil 20, 46020 Valencia, Spain" ;
+    ex:age 36 ;
+    ex:degree "магістр хімії" ;
+    ex:graduationYear "2015"^^xsd:gYear ;
+    ex:interests "їзда на велосипеді, музика, подорожі" ;
+    ex:knowledgeArea "управління відходами, токсичні відходи, забруднення повітря" ;
+    ex:university ex:УніверситетВаленсії ;
+    ex:visited ex:Італія,
+        ex:Данія,
+        ex:Німеччина,
+        ex:Португалія,
+        ex:Франція,
+        ex:Швеція ;
+    foaf:name "Емма" .
+
+ex:Париж_2014 ex:date "2014-08"^^xsd:gYearMonth .
+

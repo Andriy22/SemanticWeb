@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:ex="http://example.org/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+
+    <!-- 1. Латунь – це сплав міді та цинку. -->
+    <ex:Латунь rdf:type="ex:Сплав">
+        <ex:складається_з rdf:resource="http://example.org/Мідь"/>
+        <ex:складається_з rdf:resource="http://example.org/Цинк"/>
+    </ex:Латунь>
+
+    <!-- 2. SPIEGEL — німецький інформаційний журнал зі штаб-квартирою в Гамбурзі. -->
+    <ex:SPIEGEL rdf:type="ex:ІнформаційнийЖурнал">
+        <ex:національність>Німецька</ex:національність>
+        <ex:штаб_квартира rdf:resource="http://example.org/Гамбург"/>
+    </ex:SPIEGEL>
+
+    <!-- 3. Есе складається зі вступу, основної частини та висновку. -->
+    <ex:Есе rdf:type="ex:Текст">
+        <ex:складається_зі rdf:resource="http://example.org/Вступ"/>
+        <ex:складається_зі rdf:resource="http://example.org/ОсновнаЧастина"/>
+        <ex:складається_зі rdf:resource="http://example.org/Висновок"/>
+    </ex:Есе>
+
+    <!-- 4. Павло знає, що Олена живе в Полтаві. -->
+    <ex:Павло>
+        <ex:знає>
+            <ex:Знання rdf:type="ex:Знання">
+                <ex:твердження>
+                    <ex:Життя rdf:type="ex:Життя">
+                        <ex:особа rdf:resource="http://example.org/Олена"/>
+                        <ex:місце rdf:resource="http://example.org/Полтава"/>
+                    </ex:Життя>
+                </ex:твердження>
+            </ex:Знання>
+        </ex:знає>
+    </ex:Павло>
+
+    <!-- 5. Олена каже, що її друг живе в Києві. -->
+    <ex:Олена>
+        <ex:каже>
+            <ex:Твердження rdf:type="ex:Твердження">
+                <ex:особа rdf:resource="http://example.org/Друг"/>
+                <ex:місце rdf:resource="http://example.org/Київ"/>
+            </ex:Твердження>
+        </ex:каже>
+    </ex:Олена>
+
+    <!-- 6. Стефан думає, що Анна знає, що він знає її батька. -->
+    <ex:Стефан>
+        <ex:думає>
+            <ex:Твердження rdf:type="ex:Твердження">
+                <ex:контекст>
+                    <ex:Знання rdf:type="ex:Знання">
+                        <ex:особа rdf:resource="http://example.org/Анна"/>
+                        <ex:знає>
+                            <ex:Знання rdf:type="ex:Знання">
+                                <ex:особа rdf:resource="http://example.org/Стефан"/>
+                                <ex:знає rdf:resource="http://example.org/Батько_Анни"/>
+                            </ex:Знання>
+                        </ex:знає>
+                    </ex:Знання>
+                </ex:контекст>
+            </ex:Твердження>
+        </ex:думає>
+    </ex:Стефан>
+
+    <!-- 7. Іван знає, що Рим є столицею Італії. -->
+    <ex:Іван>
+        <ex:знає>
+            <ex:Твердження rdf:type="ex:Твердження">
+                <ex:предмет rdf:resource="http://example.org/Рим"/>
+                <ex:статус>столиця Італії</ex:статус>
+            </ex:Твердження>
+        </ex:знає>
+    </ex:Іван>
+
+</rdf:RDF>

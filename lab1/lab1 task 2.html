@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="uk">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Особистий профіль</title>
+		<script type="application/ld+json">
+			{
+				"@context": "http://schema.org",
+				"@type": "Person",
+				"name": "Александрук Андрій",
+				"jobTitle": "Студент",
+				"url": "http://example.org/andrii_aleksandruk",
+				"sameAs": ["http://www.linkedin.com/in/andrii_aleksandruk"]
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Александрук Андрій</h1>
+		<div itemscope itemtype="http://schema.org/Person">
+			<p>Ім'я: <span itemprop="name">Александрук Андрій</span></p>
+			<p>Професія: <span itemprop="jobTitle">Студент</span></p>
+			<p>
+				Контакт:
+				<a href="http://example.org/andrii_aleksandruk" itemprop="url"
+					>Мій сайт</a
+				>
+			</p>
+		</div>
+
+		<div vocab="http://schema.org/" typeof="Person">
+			<p>Ім'я: <span property="name">Александрук Андрій</span></p>
+			<p>Професія: <span property="jobTitle">Студент</span></p>
+			<p>
+				Контакт:
+				<a href="http://example.org/andrii_aleksandruk" property="url"
+					>Мій сайт</a
+				>
+			</p>
+		</div>
+	</body>
+</html>
