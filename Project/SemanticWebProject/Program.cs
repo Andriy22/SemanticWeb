@@ -5,6 +5,8 @@ using DAL;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
 
+Console.WriteLine("Hello World");
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
