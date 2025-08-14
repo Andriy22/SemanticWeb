@@ -1,11 +1,11 @@
+Console.WriteLine("Hello World");
+
 using BLL.Options;
 using BLL.Services.Abstractions;
 using BLL.Services.Implementations;
 using DAL;
 using Microsoft.EntityFrameworkCore;
 using Scalar.AspNetCore;
-
-Console.WriteLine("Hello World");
 
 var builder = WebApplication.CreateBuilder(args);
 
