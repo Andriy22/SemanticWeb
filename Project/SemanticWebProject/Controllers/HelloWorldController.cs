@@ -17,5 +17,11 @@ namespace API.Controllers
         {
             return Ok(new { message = $"Hello {name}!" });
         }
+
+        [HttpGet("test")]
+        public ActionResult<string> GetTest()
+        {
+            return Ok("Hello World19");
+        }
     }
 }
