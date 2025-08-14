@@ -1,4 +1,4 @@
-console.log('Hello World');
+console.log('hello world');
 
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
