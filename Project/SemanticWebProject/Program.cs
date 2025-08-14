@@ -1,3 +1,5 @@
+Console.WriteLine("Hello World");
+
 using BLL.Options;
 using BLL.Services.Abstractions;
 using BLL.Services.Implementations;
